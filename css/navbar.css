@@ -15,15 +15,15 @@
   }
   .navbar .collapse{
     opacity:0;
-    transition:linear 0.7s;
+    transition:linear 0.2s;
   }
   .navbar .navbar-brand2{
     opacity:1;
-    transition:linear 0.5s;
+    transition:linear 0.3s;
   }
   .navbar .navbar-brand{
     opacity:0;
-    transition:linear 0.2s;
+    transition:linear 0.3s;
   }
   .navbar:hover .navbar-brand2{
     opacity:0;
@@ -34,10 +34,10 @@
     transition:linear 0.5s;
   }
   .navbar:hover{
-    background: #00000028;
+    background: #00000025;
     width:100vw;
     height:5vh;
-    transition:linear 0.9s;
+    transition:linear 0.4s;
   }
   
   .navbar:hover .collapse{
