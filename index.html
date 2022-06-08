@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
+
+    <!-- Fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- my css -->
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+
+    <!-- default -->
+    <meta charset="utf-8">
+    <title>Escape Room - pokoje zagadek</title>
+
+
+
+    <script type="text/javascript">
+
+    </script>
+
+    <style>
+    </style>
+
+    <script>
+        window.onload = function()
+        {
+            document.body.className += " loaded";
+        }
+        var minimenuvar = 0;
+        var opiniefocuststatus = 0;
+        function minimenu()
+        {
+            if (minimenuvar==0)
+            {
+                document.getElementById('titleid').style.display= 'none';
+                document.getElementById('wyspaopis').style.visibility = 'hidden';
+                document.getElementById('kosmosopis').style.visibility = 'hidden';
+                document.getElementById('cmentarzopis').style.visibility = 'hidden';
+                document.getElementById('opiniemenu').style.visibility = 'hidden';
+                document.getElementById('rezerwacjemenu').style.visibility = 'hidden';
+                document.getElementById('phones').style.visibility = 'hidden';
+                minimenuvar = 1;
+            }
+            else
+            {
+                document.getElementById('titleid').style.display= 'block';
+                document.getElementById('wyspaopis').style.visibility = 'visible';
+                document.getElementById('kosmosopis').style.visibility = 'visible';
+                document.getElementById('cmentarzopis').style.visibility = 'visible';
+                document.getElementById('opiniemenu').style.visibility = 'visible';
+                document.getElementById('rezerwacjemenu').style.visibility = 'visible';
+                document.getElementById('phones').style.visibility = 'visible';
+                minimenuvar = 0;
+            }
+        }
+        function opiniefocus()
+        {
+            if (opiniefocuststatus==0) {
+                document.getElementById('mainimageopinie').style.filter = "brightness(50%)";
+                opiniefocuststatus = 1;
+            }
+            else{
+                document.getElementById('mainimageopinie').style.filter = "brightness(100%)";
+                opiniefocuststatus = 0;
+            }
+        }
+
+        function phoneshow()
+        {
+            document.getElementById('phonepngsmall').style.display='none';
+            document.getElementById('phonepng').style.left='1vw';
+        }
+        function phonehide()
+        {
+            document.getElementById('phonepngsmall').style.display='block';
+            document.getElementById('phonepng').style.left='-50vw';
+        }
+
+    </script>
+
+</head>
+
+<body>
